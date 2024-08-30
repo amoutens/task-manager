@@ -1,0 +1,17 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd nestjs-task-manager && cross-env STAGE=dev nest start --watch",
+    "dev": "turbo run dev:client dev:server --parallel",
+    "build": "nest build",
+    "start": "node dist/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "turbo": "^2.0.14"
+  },
+  "packageManager": "npm@8.19.3"
+}

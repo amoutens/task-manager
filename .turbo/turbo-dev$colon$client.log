@@ -1,0 +1,30 @@
+
+> your-project-name@1.0.0 dev:client
+> cd client && npm run dev
+
+
+> client@0.0.0 dev
+> vite
+
+
+[31m✘[39m vite v5.4.1 is [31mnot yet supported[39m in the Community edition of [33mConsole Ninja[39m.
+We are working hard on it for you [36mhttps://tinyurl.com/3h9mtwra[39m.
+
+Estimated release dates:
+  - Community users: [36maround 15th October, 2024 [1m(subject to team availability)[22m[39m
+[33m  - PRO users[39m:       [1m[32mpriority access is available now[39m[22m
+
+
+  [32m[1mVITE[22m v5.4.1[39m  [2mready in [0m[1m762[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/Components/Tasks.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/Components/Registration.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/Components/Authorization.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/Components/Home.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/Components/AuthProvider.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/Components/NavBar.tsx[22m
+[2m14:30:13[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/Components/AuthProvider.tsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react-swc#consistent-components-exports
+[2m14:30:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/Components/NavBar.tsx, /src/Components/Authorization.tsx, /src/Components/Registration.tsx[22m
