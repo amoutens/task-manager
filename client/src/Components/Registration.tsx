@@ -1,65 +1,71 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { User } from '../Interfaces/User';
-import { useAuth } from './AuthProvider';
 export const Registration = () => {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
-
+  const [errors, setErrors] = useState<string[]>([]);
   const handleLoginChange = (e) => setLogin(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
   const navigate = useNavigate();
-  const { login: authenticate } = useAuth();
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    fetch('http://localhost:3000/auth/signup', { 
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username: login, password }), 
-    })
-    .then(async (response) => {
-        const text = await response.text();
+    try {
+        const response = await fetch('http://localhost:3000/auth/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username: login, password }),
+        });
+
         if (response.ok) {
-          
-          const token = text;
-          console.log('Success:', token);
-          navigate('/login');
+            navigate('/login');
         } else {
-          throw new Error(text || 'Sign up failed');
+            const errorData = await response.json();
+            setErrors(errorData.message);
         }
-      })
-    //   .then((data) => {
-    //     authenticate(data.accessToken);
-    //     navigate('/tasks');
-    //   })
-      .catch((error) => {
-        console.error('Error:', error);
-        alert(error.message); 
-      });
-  };
-  
+    } catch (error) {
+        setErrors(['An unexpected error occurred']);
+    }
+};
+  console.log(errors)
   
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <p>Sign Up</p>
+    <div className='sign-form'>
+      <div className={errors.length !== 0? 'sign-form-container error' : 'sign-form-container'}><p>Sign Up</p>
+        <form onSubmit={handleSubmit}>
+        <p>Input your username</p>
         <input
           type="text"
           placeholder="Login"
           value={login}
           onChange={handleLoginChange}
         />
+        <p>Input your password</p>
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={handlePasswordChange}
         />
-        <button type="submit">Sign up</button>
-      </form>
+         {errors.length > 0 && (
+                <ul className='error'>
+                    {errors.map((err, index) => (
+                        <li
+                            key={index}
+                            className={`${errors.length === 1 ? 'li-error': ''}`}
+                        >
+                            {err}
+                        </li>
+                    ))}
+                </ul>
+            )}
+         <p className='question'>Already have an account? <a href='/login'> Sign in</a></p>
+        <button className={errors.length === 0 ? '' : 'button-error'}  type="submit">Sign up</button>
+      </form></div>
+      
     </div>
   );
 };

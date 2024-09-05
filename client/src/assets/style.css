@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: fixed;
+  z-index: -1;
   top: 0;
+  left: 0;
   width: 100vw;
   background-color: #343434;
 }
@@ -19,6 +22,8 @@ nav ul {
           justify-content: center;
   padding: 0;
   margin: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 nav ul a {
   -webkit-box-flex: 1;
@@ -29,15 +34,187 @@ nav ul a {
   width: 100%;
   height: 100%;
   text-align: center;
-  -webkit-transition: 10ms;
-  transition: 10ms;
+  text-decoration: none;
 }
 nav ul a:hover {
-  -webkit-transition: 10ms;
-  transition: 10ms;
   background-color: #4d4d4d;
 }
 nav ul a li {
   color: rgba(255, 255, 255, 0.87);
   font-size: larger;
+}
+nav ul:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+:root {
+  background-color: #1a1a1a;
+  color: azure;
+  overflow: hidden;
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.home-description {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  margin: 10px 20px;
+}
+.home-description p {
+  width: 50%;
+  text-align: center;
+  font-size: larger;
+}
+.home-description p span {
+  font-size: medium;
+  text-align: justify;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.home-description img {
+  width: 50%;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  margin-left: 20px;
+}
+
+.sign-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  margin: -30px 20px;
+}
+.sign-form .sign-form-container {
+  background-color: #343434;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 30%;
+  height: 55%;
+  border: 2px solid gray;
+  -webkit-box-shadow: 0 0 20px gray;
+          box-shadow: 0 0 20px gray;
+}
+.sign-form .sign-form-container.error {
+  height: 60%;
+}
+.sign-form p {
+  font-size: larger;
+}
+.sign-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sign-form form p {
+  font-size: smaller;
+  margin-left: 5px;
+}
+.sign-form form input {
+  font-size: larger;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: -5px;
+  border: 2px solid transparent;
+  -webkit-transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.sign-form form input:focus {
+  border: 2px solid #4d4d4d;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+.sign-form form button {
+  margin-top: 5px;
+  font-size: 130%;
+  background-color: rgb(56, 157, 45);
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: azure;
+  cursor: pointer;
+}
+.sign-form form button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 10px #46c538;
+          box-shadow: 0 0 10px #46c538;
+  background-color: #46c538;
+}
+.sign-form form .error + p {
+  margin-top: 0px;
+}
+.sign-form form .error {
+  text-align: center;
+  color: rgb(231, 56, 56);
+  margin-top: 5px;
+  list-style: outside;
+}
+.sign-form form .error .li-error {
+  list-style: none;
+}
+.sign-form form ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.sign-form form li {
+  font-size: 14px;
+}
+.sign-form form .button-error {
+  background-color: rgb(231, 56, 56);
+  -webkit-box-shadow: 0 0 10px #ec6666;
+          box-shadow: 0 0 10px #ec6666;
+}
+.sign-form form .question {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.sign-form form .question a {
+  color: rgb(238, 140, 12);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sign-form form .question a:hover {
+  color: #f5a338;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-app {
+  margin-top: 55.2px;
 }

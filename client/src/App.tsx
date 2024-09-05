@@ -16,7 +16,7 @@ function App() {
     <div>
       <AuthProvider>
       <Navbar></Navbar>
-      <main>
+      <main className='main-app'>
       <Router>
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}

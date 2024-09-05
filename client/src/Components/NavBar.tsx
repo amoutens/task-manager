@@ -8,6 +8,9 @@ export const Navbar = () => {
     const handleLogout = () => {
         logout();
       };
+      if (location.pathname === '/login' || location.pathname === '/signup') {
+        return null;
+      }
   return (
     <nav>
       <ul>

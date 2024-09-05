@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@mixin Montserrat {
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 nav {
     display: flex;
-    position: absolute;
+    position: fixed;
+    z-index: -1 ;
     top: 0;
+    left: 0;
     width: 100vw;
     background-color: lighten(#1a1a1a, 10%);
     ul {
@@ -12,6 +21,7 @@ nav {
         justify-content: center;
         padding: 0;
         margin: 0;
+        transition: 0.3s;
         a {
             flex: 1;
             padding: 1rem 0;
@@ -19,9 +29,8 @@ nav {
             width: 100%;
             height: 100%;
             text-align: center;
-            transition: 10ms;
+            text-decoration: none   ;
             &:hover {
-                transition: 10ms;
                 background-color: lighten(#1a1a1a, 20%);
             }
             li {
@@ -29,6 +38,156 @@ nav {
                 font-size: larger;
             }
         }
+        &:hover {
+            transition: 0.3s;
+        }
 
     }
+}
+:root {
+    background-color: #1a1a1a;
+    color:azure;
+    overflow: hidden;
+    @include Montserrat;
+}
+
+.home-description {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    margin: 10px 20px;
+    
+    p {
+        width: 50%;
+        text-align: center;
+        font-size: larger;
+
+        span {
+            font-size: medium;
+            text-align: justify;
+            width: 80%; 
+            display: block; 
+            margin: 0 auto;
+        }
+    }
+
+    img {
+        width: 50%;
+        filter: blur(4px);
+        margin-left: 20px;
+    }
+}
+
+.sign-form {
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: -30px 20px;
+    
+    
+
+    .sign-form-container {
+        background-color: lighten(#1a1a1a, 10%);
+        padding: 20px 30px;
+        border-radius: 10px;
+        width: 30%;
+        height: 55%;
+        border: 2px solid lighten(#1a1a1a, 40%);
+        box-shadow: 0 0 20px lighten(#1a1a1a, 40%); 
+        &.error {
+            height: 60%;
+        }
+    }
+    
+    p {
+        font-size: larger;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: smaller;
+            margin-left: 5px;
+        }
+
+        input {
+            font-size: larger;
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: -5px;
+            border: 2px solid transparent;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+
+            &:focus {
+                border: 2px solid lighten(#1a1a1a, 20%);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+                outline: none; 
+            }
+        }
+        button {
+            margin-top: 5px;
+            font-size: 130%;
+            background-color:rgb(56, 157, 45);
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            transition: 0.3s;
+            color: azure;
+            cursor: pointer;
+            &:hover {
+                transition: 0.3s;
+                box-shadow: 0 0 10px lighten(rgb(56, 157, 45), 10%);
+                background-color: lighten(rgb(56, 157, 45), 10%);
+            }
+
+        }
+        .error + p {
+            margin-top: 0px;
+        }
+        .error {
+            text-align: center;
+            color: rgb(231, 56, 56);
+            margin-top: 5px;
+            list-style:outside;
+            .li-error {
+                list-style: none;
+            }
+        }
+        ul {
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+        }
+        li {
+            font-size: 14px;
+        }
+        .button-error {
+            background-color: rgb(231, 56,56 );
+            box-shadow: 0 0 10px lighten(rgb(231, 56,56 ), 10%);
+
+        }
+        .question {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 16px;
+            a {
+                color: rgb(238, 140, 12);
+                transition: 0.3s;
+                &:hover {
+                    color: lighten(rgb(238, 140, 12), 10%);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.main-app {
+    margin-top: 55.2px;
 }
