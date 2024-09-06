@@ -4,7 +4,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  z-index: -1;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100vw;
@@ -50,8 +50,8 @@ nav ul:hover {
 
 :root {
   background-color: #1a1a1a;
-  color: azure;
-  overflow: hidden;
+  color: #f0ffff;
+  overflow-x: hidden;
   font-family: "Montserrat", system-ui;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -213,6 +213,68 @@ nav ul:hover {
   color: #f5a338;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.task-page button {
+  margin-top: 5px;
+  font-size: 130%;
+  background-color: rgb(58, 57, 57);
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: azure;
+  cursor: pointer;
+}
+.task-page button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 10px #46c538;
+          box-shadow: 0 0 10px #46c538;
+  background-color: #46c538;
+}
+.task-page input {
+  font-size: larger;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: -5px;
+  border: 2px solid transparent;
+  -webkit-transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.task-page input:focus {
+  border: 2px solid #4d4d4d;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+.task-page div {
+  width: 50%;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border-radius: 20px;
+}
+.task-page div li {
+  position: relative;
+  list-style: none;
+}
+.task-page div li p {
+  font-size: 30px;
+}
+.task-page div li .status-span {
+  position: absolute;
+  top: -20px;
+  left: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-app {

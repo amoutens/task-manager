@@ -11,6 +11,7 @@
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
+    "polished": "^4.3.1",
     "turbo": "^2.0.14"
   },
   "packageManager": "npm@8.19.3"

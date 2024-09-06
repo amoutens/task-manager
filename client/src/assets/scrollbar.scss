@@ -1,0 +1,38 @@
+body::-webkit-scrollbar {
+    margin-top: 55.2px;
+    width: 12px;     
+    position: absolute;   
+  }
+  
+body::-webkit-scrollbar-track {
+    background: transparent;       
+    opacity: 100%; 
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: lighten(#1a1a1a, 20%);   
+    border-radius: 20px;       
+    border: 3px solid transparent; 
+    animation: thumbFadeIn 0.3s ease;
+  }
+body::-webkit-scrollbar-thumb:hover {
+    background-color: lighten(#1a1a1a, 30%); 
+    animation: thumbFadeOut 0.3s ease;
+}
+@keyframes thumbFadeIn {
+    0% {
+        background-color: lighten(#1a1a1a, 10%);
+    }
+    100% {
+        background-color: lighten(#1a1a1a, 20%);
+    }
+}
+
+@keyframes thumbFadeOut {
+    0% {
+        background-color: lighten(#1a1a1a, 20%);
+    }
+    100% {
+        background-color: lighten(#1a1a1a, 30%);
+    }
+}

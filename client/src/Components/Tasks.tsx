@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Task } from '../Interfaces/Task';
 import { useNavigate } from 'react-router-dom';
+import { lighten, transitions } from 'polished';
+import '../assets/scrollbar.css' 
+import { useAuth } from './AuthProvider';
 
 export const Tasks = () => {
   const navigate = useNavigate();
@@ -14,12 +17,32 @@ export const Tasks = () => {
   const handleDescriptionChange = (e) => setDescription(e.target.value);
   const handleStatusChange = (e) => setStatus(e.target.value);
   const [editTaskId, setEditTaskId] = useState<string | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const { login: authenticate } = useAuth();
+  const bgColorTaskCard = {
+    OPEN: 'rgb(231, 56, 56, 70%)',
+    IN_PROGRESS: 'rgb(115, 13, 115, 70%)',
+    DONE: 'rgb(56, 157, 45, 70%)'
+  }
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
 
   // useEffect(() => {
   //   console.log(status);
   // }, [status]);
   useEffect(() => {
+    const isFirstVisit = localStorage.getItem('isFirstVisit');
+  
+    if (!isFirstVisit) {
+      localStorage.removeItem('token');
+      localStorage.setItem('isFirstVisit', 'true'); 
+      alert('Please log in again.');
+      window.location.href = '/'; 
+      return;
+    }
+
     const token = localStorage.getItem('token');
+    console.log(token)
     if (!token) {
       alert('You are not authenticated');
       window.location.href = '/'; 
@@ -107,10 +130,11 @@ export const Tasks = () => {
     setTitle(task.title);
     setDescription(task.description);
     setStatus(task.status);
-    setEditTaskId(task.id); // Set the task id to be edited
+    setEditTaskId(task.id); 
   };
   return (
     <div className="task-page">
+      <div className='scroll'></div>
       <h1>Tasks</h1>
       <input type="text" name="title" id="title" placeholder='Title' value={title} onChange={handleTitleChange}/>
       <input type="text" name="description" id="description" placeholder='Description' value={description} onChange={handleDescriptionChange}/>
@@ -123,9 +147,13 @@ export const Tasks = () => {
       <button onClick={() => handleClick()}>{editTaskId ? 'Edit task' : "Add new task"}</button>
       <ul>
         {tasks.map((task) => (
-          <><li key={task.id}> {task.title} {task.description} {task.status}</li>
+          <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ 
+            backgroundColor:  bgColorTaskCard[task.status],
+            border: `2px solid ${lighten(0.1, bgColorTaskCard[task.status])}`,
+            boxShadow: isHovered ? `0px 0px 10px ${lighten(0.1,bgColorTaskCard[task.status])}` : ''
+        }}><li key={task.id}> <p>{task.title}</p> <span>{task.description}</span> <span className='status-span'>{task.status}</span></li>
           <button onClick={() => handleEdit(task)}>Edit</button>
-          <button onClick={() => handleDelete(task.id)}>Delete</button></>
+          <button onClick={() => handleDelete(task.id)}>Delete</button></div>
 
         ))}
       </ul>
