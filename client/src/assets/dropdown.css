@@ -16,7 +16,7 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #242424;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -28,8 +28,9 @@
 }
 
 .dropdown-menu li {
-  color: black;
+  color: azure;
   padding: 12px 16px;
+  margin: 10px 5px;
   cursor: pointer;
   list-style-type: none;
 }
@@ -40,4 +41,9 @@
 
 .dropdown-menu {
   display: block;
+}
+
+li {
+  border-radius: 20px;
+  color: azure;
 }

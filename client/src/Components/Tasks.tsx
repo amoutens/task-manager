@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Task } from '../Interfaces/Task';
 import { useNavigate } from 'react-router-dom';
-import { lighten } from 'polished';
+import { darken, lighten } from 'polished';
 import '../assets/scrollbar.css' 
 import { useAuth } from './AuthProvider';
 import { EditButton } from './Buttons/EditButton';
@@ -123,8 +123,8 @@ export const Tasks = () => {
   
         setTitle('');
         setDescription('');
-        // Ensure status isn't being reset here
-        // setStatus('OPEN');
+        setStatus('OPEN');
+        setStatusValue('Open')
       } else {
         throw new Error('Failed to save task');
       }
@@ -163,7 +163,6 @@ export const Tasks = () => {
   return (
     <div className="task-page">
       <div className='scroll'></div>
-      <h1>Tasks</h1>
       <input type="text" name="title" id="title" placeholder='Title' value={title} onChange={handleTitleChange}/>
       <input type="text" name="description" id="description" placeholder='Description' value={description} onChange={handleDescriptionChange}/>
 
@@ -174,19 +173,26 @@ export const Tasks = () => {
       </button>
       {isOpen && (
         <ul className="dropdown-menu">
-          <li onClick={() => handleOptionClick("Open")}>Open</li>
-          <li onClick={() => handleOptionClick("In progress")}>In progress</li>
-          <li onClick={() => handleOptionClick("Done")}>Done</li>
+          <li onClick={() => handleOptionClick("Open")} 
+          style={{
+            backgroundColor: bgColorTaskCard.OPEN,
+            border: `3px solid ${lighten(0.1, bgColorTaskCard.OPEN)}`
+            }}>
+          Open</li>
+          <li onClick={() => handleOptionClick("In progress")} 
+          style={{backgroundColor: bgColorTaskCard.IN_PROGRESS,
+            border: `3px solid ${lighten(0.1, bgColorTaskCard.IN_PROGRESS)}`
+          }}>
+          In progress</li>
+          <li onClick={() => handleOptionClick("Done")}  
+          style={{backgroundColor: bgColorTaskCard.DONE,
+            border: `3px solid ${lighten(0.1, bgColorTaskCard.DONE)}`
+          }}>
+          Done</li>
         </ul>
       )}
     </div>
     
-      {/* <label htmlFor="status">Status</label>
-      <select name="status" id="status" value={status} onChange={handleStatusChange}>
-        <option  className='open-status' value="OPEN">Open</option>
-        <option className='inprogress-status' value="IN_PROGRESS">In progress</option>
-        <option className='done-status' value="DONE">Done</option>
-      </select> */}
       <button onClick={() => handleClick()}>{editTaskId ? 'Edit task' : "Add new task"}</button>
       <ul>
         {tasks.map((task) => (
