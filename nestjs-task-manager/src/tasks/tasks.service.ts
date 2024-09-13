@@ -36,12 +36,12 @@ export class TasksService {
         return tasks;
         }
     async createTask (createTaskDTO: CreateTaskDTO, user: User): Promise<Task> {
-        const {title, description} = createTaskDTO;
+        const {title, description, status} = createTaskDTO;
 
         const task = this.tasksRepository.create( {
             title,
             description,
-            status: TaskStatus.OPEN,
+            status,
             user
         })
         await this.tasksRepository.save(task);

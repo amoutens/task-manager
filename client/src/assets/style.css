@@ -238,7 +238,7 @@ nav ul:hover {
   font-size: larger;
   border-radius: 15px;
   padding: 10px;
-  margin-top: -5px;
+  margin: 10px 10px;
   border: 2px solid transparent;
   -webkit-transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
   transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
@@ -256,13 +256,30 @@ nav ul:hover {
   padding: 10px 20px;
   margin: 10px 10px;
   border-radius: 20px;
+  -webkit-transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 .task-page div li {
   position: relative;
   list-style: none;
+  margin-bottom: 20px;
 }
 .task-page div li p {
   font-size: 30px;
+}
+.task-page div li p span {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.task-page div li p:hover span {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 .task-page div li .status-span {
   position: absolute;
@@ -279,4 +296,15 @@ nav ul:hover {
 
 .main-app {
   margin-top: 55.2px;
+}
+
+.edit-delete-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.edit-delete-btn:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }

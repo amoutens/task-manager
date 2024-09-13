@@ -1,0 +1,269 @@
+
+> your-project-name@1.0.0 dev:server
+> cd nestjs-task-manager && cross-env STAGE=dev nest start --watch
+
+[32m✔[0m [33mConsole Ninja[0m extension is connected to [33mNest.js[0m, see [36mhttps://tinyurl.com/2vt8jxzw[0m
+c[[90m15:08:38[0m] Starting compilation in watch mode...
+
+[[90m15:08:43[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +22ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +60ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +163ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/tasks}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signin, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/test, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[32m[Nest] 16656  - [39m13.09.2024, 15:08:46 [32m    LOG[39m [32mApplication listening on port 3000[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:16:38 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:16:39 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:21:02 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:21:02 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:21:13 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:21:13 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:22:15 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:22:15 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:31:49 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:31:49 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:33:16 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:34:14 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:34:34 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:34:36 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:34:36 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 15:52:28 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 16:21:01 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 16:21:42 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 16:21:42 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 16656  - [39m13.09.2024, 16:22:09 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+c[[90m16:25:15[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:16[0m] Found 0 errors. Watching for file changes.
+
+c[[90m16:25:17[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:17[0m] Found 0 errors. Watching for file changes.
+
+c[[90m16:25:17[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:18[0m] Found 0 errors. Watching for file changes.
+
+c[[90m16:25:20[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:20[0m] Found 0 errors. Watching for file changes.
+
+c[[90m16:25:23[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:23[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 2800  - [39m13.09.2024, 16:25:24 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+c[[90m16:25:24[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:24[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +27ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +63ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +173ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/tasks}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signin, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/test, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[32m[Nest] 12448  - [39m13.09.2024, 16:25:27 [32m    LOG[39m [32mApplication listening on port 3000[39m
+c[[90m16:25:27[0m] File change detected. Starting incremental compilation...
+
+[[90m16:25:27[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +47ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +124ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/tasks}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signin, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/test, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +6ms[39m
+[32m[Nest] 3252  - [39m13.09.2024, 16:25:30 [32m    LOG[39m [32mApplication listening on port 3000[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:25:54 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:25:54 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:30:51 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:31:05 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:57:59 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:57:59 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 16:59:59 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:00:35 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:00:35 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:01:37 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:05:40 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:06:18 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:06:18 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:08:26 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 3252  - [39m13.09.2024, 17:11:39 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+c[[90m17:12:48[0m] File change detected. Starting incremental compilation...
+
+[[90m17:12:50[0m] Found 0 errors. Watching for file changes.
+
+c[[90m17:12:50[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +22ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +62ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +152ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/tasks}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signin, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/test, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[32m[Nest] 25344  - [39m13.09.2024, 17:12:53 [32m    LOG[39m [32mApplication listening on port 3000[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:13:03 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:13:39 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:15:30 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:15:32 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:15:32 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:16:25 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:23:16 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:23:18 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:23:19 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+[96m[Nest] 25344  - [39m13.09.2024, 17:25:43 [96mVERBOSE[39m [38;5;3m[TasksController] [39m[96mUser amoutens retrieving all tasks[39m
+c[[90m17:30:33[0m] File change detected. Starting incremental compilation...
+
+[96msrc/tasks/tasks.service.ts[0m:[93m39[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'CreateTaskDTO'.
+
+[7m39[0m         const {title, description, status} = createTaskDTO;
+[7m  [0m [91m                                   ~~~~~~[0m
+
+[[90m17:30:33[0m] Found 1 error. Watching for file changes.
+
+c[[90m17:31:06[0m] File change detected. Starting incremental compilation...
+
+[96msrc/tasks/tasks.service.ts[0m:[93m39[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'CreateTaskDTO'.
+
+[7m39[0m         const {title, description, status} = createTaskDTO;
+[7m  [0m [91m                                   ~~~~~~[0m
+
+[[90m17:31:06[0m] Found 1 error. Watching for file changes.
+
+c[[90m17:31:26[0m] File change detected. Starting incremental compilation...
+
+[[90m17:31:26[0m] Found 0 errors. Watching for file changes.
+
+c[[90m17:31:27[0m] File change detected. Starting incremental compilation...
+
+[[90m17:31:28[0m] Found 0 errors. Watching for file changes.
+
+c[[90m17:31:28[0m] File change detected. Starting incremental compilation...
+
+[[90m17:31:29[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:31 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +63ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +122ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/tasks}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signin, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/test, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[32m[Nest] 19148  - [39m13.09.2024, 17:31:32 [32m    LOG[39m [32mApplication listening on port 3000[39m
+c[[90m17:31:32[0m] File change detected. Starting incremental compilation...
+
+[[90m17:31:32[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:34 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +47ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +119ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/tasks}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 27936  - [39m13.09.2024, 17:31:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/tasks, GET} route[39m[38;5;3m +3ms[39m
