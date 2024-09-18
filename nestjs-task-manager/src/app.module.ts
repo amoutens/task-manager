@@ -6,6 +6,11 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { configValidationSchema } from './config.schema';
 import { ServeStaticModule } from '@nestjs/serve-static';
+import { User } from './auth/user.entity';
+import { Status } from './status/status.entity';
+import { Task } from './tasks/task.entity';
+import { TaskStatus } from './tasks/task-status.enum';
+import { StatusModule } from './status/status.module';
 
 @Module({
   imports: [
@@ -30,12 +35,14 @@ import { ServeStaticModule } from '@nestjs/serve-static';
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_DATABASE'),
         autoLoadEntities: true,
-        entities: [dirname + './tasks/task.entity{.ts,.js}'],
+        // entities: [dirname + './tasks/task.entity{.ts,.js}'],
+        entities: [User, Status, Task],
         synchronize: true,
         }
       }
     }),
-    AuthModule
+    AuthModule,
+    StatusModule
   ],
 })
 export class AppModule {}

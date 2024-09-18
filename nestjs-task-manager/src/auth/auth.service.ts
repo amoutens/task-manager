@@ -19,11 +19,9 @@ export class AuthService {
     async signUp(authCredentialsDto: AuthCredentialsDto): Promise<void> {
         const { username, password } = authCredentialsDto;
         
-        // Validate DTO
         try {
             await validateOrReject(authCredentialsDto);
         } catch (validationErrors) {
-            // Flatten validation errors into a user-friendly format
             const formattedErrors = validationErrors.flatMap((err) => 
                 Object.values(err.constraints ?? {})
             );

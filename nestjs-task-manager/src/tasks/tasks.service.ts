@@ -9,6 +9,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './task.entity';
 import { Repository, createQueryBuilder } from 'typeorm';
 import { User } from 'src/auth/user.entity';
+import { Status } from 'src/status/status.entity';
 
 @Injectable()
 
@@ -16,9 +17,19 @@ export class TasksService {
     constructor(
         @InjectRepository(Task)
         private tasksRepository: Repository<Task>,
-        @InjectRepository(TasksRepository)
-        private tasksRepo: TasksRepository,
+        // @InjectRepository(TasksRepository)
+        // private tasksRepo: TasksRepository,
+        @InjectRepository(Status)
+        private statRepo : Repository<Status>
       ) {}
+      async findStatus(name: string): Promise<Status> {
+        const status = await this.statRepo.findOne({where : {name}});
+        if(!status) {
+            throw new NotFoundException('Individual status not found');
+        }
+        return status;
+      }
+
       async GetTasks(filterDto: GetTasksFilterDto, user: User) : Promise<Task[]> {
         const {status, search} = filterDto;
         const query = this.tasksRepository.createQueryBuilder('task');
@@ -38,10 +49,18 @@ export class TasksService {
     async createTask (createTaskDTO: CreateTaskDTO, user: User): Promise<Task> {
         const {title, description, status} = createTaskDTO;
 
+        let taskStatus: string | Status;
+        if ( Object.values(TaskStatus).includes(status as TaskStatus)) {
+            taskStatus = status as TaskStatus;
+        }
+        else {
+            const foundStatus = await this.findStatus(status as string);
+            taskStatus = foundStatus.name;
+        }
         const task = this.tasksRepository.create( {
             title,
             description,
-            status,
+            status: taskStatus,
             user
         })
         await this.tasksRepository.save(task);
@@ -70,7 +89,17 @@ export class TasksService {
             task.description = description;
         }
         if (status !== undefined) {
-            task.status = status;
+            if (status !== undefined) {
+                let taskStatus: string | Status;
+                if (Object.values(TaskStatus).includes(status as TaskStatus)) {
+                  taskStatus = status as TaskStatus;
+                } else {
+                  const foundStatus = await this.findStatus(status as string);
+                  taskStatus = foundStatus.name;
+                }
+          
+                task.status = taskStatus;
+              }
         }
         await this.tasksRepository.save(task);
         return task;

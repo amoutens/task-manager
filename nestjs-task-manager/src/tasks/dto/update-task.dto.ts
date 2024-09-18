@@ -1,9 +1,9 @@
-import { IsEnum} from "class-validator";
+import { IsEnum, IsNotEmpty} from "class-validator";
 import { TaskStatus } from "../task-status.enum";
 
 export class UpdateTaskDTO {
     title?: string;
     description?: string;
-    @IsEnum(TaskStatus)
-    status?: TaskStatus;
+    // @IsEnum(TaskStatus)
+    status?: TaskStatus | string;
 }
