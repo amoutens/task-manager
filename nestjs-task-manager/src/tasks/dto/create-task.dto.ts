@@ -7,7 +7,8 @@ export class CreateTaskDTO {
     title: string;
     @IsNotEmpty()
     description: string;
-    // @IsEnum(TaskStatus)
+    // // @IsEnum(TaskStatus)
     @IsNotEmpty()
-    status: TaskStatus | string
+    status: TaskStatus | string;
+    
 }

@@ -4,7 +4,7 @@ export type Task = {
     id: string,
     title: string,
     description: string,
-    status: TaskStatus ,
+    status: {name: string | TaskStatus, color: string} ,
     user: User;
 }
     

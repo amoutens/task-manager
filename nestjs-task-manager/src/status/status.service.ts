@@ -22,4 +22,11 @@ export class StatusService {
         await this.statusesRepository.save(status);
         return status;
     }
+    async GetStatuses(user: User) : Promise<Status[]> {
+        
+        const query = this.statusesRepository.createQueryBuilder('status');
+        query.where({user});
+        const statuses = await query.getMany();
+        return statuses;
+        }
 }

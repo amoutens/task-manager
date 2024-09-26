@@ -11,8 +11,10 @@ export class Task {
     title: string;
     @Column()
     description: string;
-    @Column()
-    status: TaskStatus | string;
+    // @Column()
+    // status: Object;
+    @Column('json', { nullable: true })
+status: { name: string | TaskStatus; color: string } | null;
     @ManyToOne(_type => User, user => user.tasks, {eager: false})
     @Exclude({toPlainOnly: true})
     user: User;

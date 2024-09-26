@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Task } from '../Interfaces/Task';
+import { Status } from '../Interfaces/Status';
 import { useNavigate } from 'react-router-dom';
 import { darken, lighten } from 'polished';
 import '../assets/scrollbar.css' 
@@ -14,7 +15,7 @@ export const Tasks = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [title, setTitle] = useState<string>();
   const [description, setDescription] = useState<string>();
-  const [status, setStatus] = useState<string>("");
+  const [status, setStatus] = useState<string>("OPEN");
   const [statusValue, setStatusValue] = useState<string>("Open");
   const [isOpen, setIsOpen] = useState(false);
   const handleTitleChange = (e) => setTitle(e.target.value);
@@ -25,12 +26,8 @@ export const Tasks = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { login: authenticate } = useAuth();
 
+  const [statuses, setStatuses] = useState<Status[]>([]);
   
-  const bgColorTaskCard = {
-    OPEN: 'rgb(231, 56, 56, 70%)',
-    IN_PROGRESS: 'rgb(115, 13, 115, 70%)',
-    DONE: 'rgb(56, 157, 45, 70%)'
-  }
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 
@@ -38,20 +35,28 @@ export const Tasks = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  const statusMapping : { [key: string]: string } = {
+    'In progress': 'IN_PROGRESS',
+    'Done': 'DONE',
+    'Open': 'OPEN'
+  };
   const handleOptionClick = (option: string) => {
-    const statusMapping = {
-      'In progress': 'IN_PROGRESS',
-      'Done': 'DONE',
-      'Open': 'OPEN'
+    
+    if(Object.keys(statusMapping).includes(`${option}`))
+      {
+        setStatus(statusMapping[option]);
+      }
+    else {
+      setStatus(option)
     };
-    setStatus(statusMapping[option]);
+    
+    
     setStatusValue(option);
     setIsOpen(false);
   };
   
   
   useEffect(() => {
-    console.log("Status changed to:", status);
   }, [status]);
   useEffect(() => {
     const isFirstVisit = localStorage.getItem('isFirstVisit');
@@ -96,7 +101,7 @@ export const Tasks = () => {
     
     const taskData = { title, description, status };
     console.log('Task Data:', taskData);
-  
+    console.log('update task info', taskData)
     try {
       const method = editTaskId ? 'PATCH' : 'POST';
       const endpoint = editTaskId ? `http://localhost:3000/tasks/${editTaskId}` : 'http://localhost:3000/tasks';
@@ -157,9 +162,55 @@ export const Tasks = () => {
   const handleEdit = (task: Task) => {
     setTitle(task.title);
     setDescription(task.description);
-    setStatus(task.status);
+    setStatus(task.status.name);
     setEditTaskId(task.id); 
+    if (Object.values(statusMapping).includes(task.status.name)) {
+      for (const key in statusMapping) {
+          if (statusMapping[key] === task.status.name) {
+              setStatusValue(key);
+              break; 
+          }
+      }
+    } else {
+        setStatusValue(task.status.name); 
+    }
+    
   };
+  const bgColorTaskCard = {
+    OPEN: 'rgb(231, 56, 56, 70%)',
+    IN_PROGRESS: 'rgb(115, 13, 115, 70%)',
+    DONE: 'rgb(56, 157, 45, 70%)',
+  };
+
+  
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      alert('You are not authenticated');
+      window.location.href = '/'; 
+      return;
+    }
+    fetch('http://localhost:3000/status', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`, 
+      }
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Failed to fetch statuses');
+      })
+      .then((data) => {
+        setStatuses(data);
+        
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, []);
   return (
     <div className="task-page">
       <div className='scroll'></div>
@@ -189,6 +240,14 @@ export const Tasks = () => {
             border: `3px solid ${lighten(0.1, bgColorTaskCard.DONE)}`
           }}>
           Done</li>
+          {statuses.map((stat) => (
+           <li onClick={() => handleOptionClick(stat.name)}  
+           style={{backgroundColor: stat.color,
+             border: `3px solid ${lighten(0.1, stat.color)}`
+           }}>
+           {stat.name}</li>
+
+        ))}
         </ul>
       )}
     </div>
@@ -197,16 +256,16 @@ export const Tasks = () => {
       <ul>
         {tasks.map((task) => (
           <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ 
-            backgroundColor:  bgColorTaskCard[task.status],
-            border: `2px solid ${lighten(0.1, bgColorTaskCard[task.status])}`,
-            boxShadow: isHovered ? `0px 0px 10px ${lighten(0.1,bgColorTaskCard[task.status])}` : ''
+            backgroundColor:  task.status.color,
+            border: `2px solid ${lighten(0.1, task.status.color) }`,
+            boxShadow: isHovered ? `0px 0px 10px ${lighten(0.1,task.status.color)}` : ''
         }}><li key={task.id}> 
         <p>{task.title} 
         <span onClick={() => handleEdit(task)}><EditButton /></span>
         <span onClick={() => handleDelete(task.id)}><DeleteButton/></span>
         </p> 
         <span>{task.description}</span> 
-        <span className='status-span'>{task.status}</span></li>
+        <span className='status-span'>{task.status.name}</span></li>
           </div>
 
         ))}
