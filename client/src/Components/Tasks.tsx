@@ -17,10 +17,18 @@ export const Tasks = () => {
   const [description, setDescription] = useState<string>();
   const [status, setStatus] = useState<string>("OPEN");
   const [statusValue, setStatusValue] = useState<string>("Open");
+
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = React.useRef<HTMLDivElement | null>(null);
+
+  const [statusColorDD, setStatusColorDD] = useState<string>('#FF0000');
+  const [statusNameDD, setStatusNameDD] = useState<string>('');
+
   const handleTitleChange = (e) => setTitle(e.target.value);
   const handleDescriptionChange = (e) => setDescription(e.target.value);
-  const handleStatusChange = (e) => setStatus(e.target.value); 
+  // const handleStatusChange = (e) => setStatus(e.target.value); 
+  const handleStatusNameDDChange = (e) => setStatusNameDD(e.target.value);
+  const handleStatusColorDDChange = (e) => setStatusColorDD(e.target.value);
 
   const [editTaskId, setEditTaskId] = useState<string | null>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -33,8 +41,15 @@ export const Tasks = () => {
 
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
+  const handleClickOutside = (event: MouseEvent) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+        setStatusColorDD('#FF0000');
+        setStatusNameDD('');
+    }
+};
   const statusMapping : { [key: string]: string } = {
     'In progress': 'IN_PROGRESS',
     'Done': 'DONE',
@@ -49,15 +64,28 @@ export const Tasks = () => {
     else {
       setStatus(option)
     };
-    
-    
     setStatusValue(option);
     setIsOpen(false);
   };
   
-  
+  const statusNameFromDBtoJSX = (status: string) => {
+    if (Object.values(statusMapping).includes(status)) {
+      for (const key in statusMapping) {
+          if (statusMapping[key] === status) {
+              return key; 
+          }
+      }
+    } 
+    return status;
+  } 
   useEffect(() => {
   }, [status]);
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+}, []);
   useEffect(() => {
     const isFirstVisit = localStorage.getItem('isFirstVisit');
   
@@ -164,16 +192,7 @@ export const Tasks = () => {
     setDescription(task.description);
     setStatus(task.status.name);
     setEditTaskId(task.id); 
-    if (Object.values(statusMapping).includes(task.status.name)) {
-      for (const key in statusMapping) {
-          if (statusMapping[key] === task.status.name) {
-              setStatusValue(key);
-              break; 
-          }
-      }
-    } else {
-        setStatusValue(task.status.name); 
-    }
+    setStatusValue(statusNameFromDBtoJSX((task.status.name)))
     
   };
   const bgColorTaskCard = {
@@ -211,6 +230,42 @@ export const Tasks = () => {
         console.error('Error:', error);
       });
   }, []);
+  const handleCreateStatus = async () => {
+    const token = localStorage.getItem('token');
+    const newStatus = {
+      name: statusNameDD,
+      color: statusColorDD,
+    };
+
+    try {
+      const response = await fetch('http://localhost:3000/status', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify(newStatus),
+      });
+
+      if (response.ok) {
+        const createdStatus = await response.json();
+        setStatuses((prevStatuses) => [...prevStatuses, createdStatus]);
+        setStatusNameDD('');
+        setStatusColorDD('#FF0000'); 
+      } else {
+        throw new Error('Failed to create status');
+      }
+    } catch (error) {
+      alert('An unexpected error occurred while creating the status');
+      console.error(error);
+    }
+  };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && statusNameDD) {
+      e.preventDefault(); 
+      handleCreateStatus(); 
+    }
+  };
   return (
     <div className="task-page">
       <div className='scroll'></div>
@@ -218,7 +273,7 @@ export const Tasks = () => {
       <input type="text" name="description" id="description" placeholder='Description' value={description} onChange={handleDescriptionChange}/>
 
 
-      <div className="dropdown">
+      <div className="dropdown" ref={dropdownRef}>
       <button className="dropdown-btn" onClick={toggleDropdown}>
         {statusValue}
       </button>
@@ -246,8 +301,15 @@ export const Tasks = () => {
              border: `3px solid ${lighten(0.1, stat.color)}`
            }}>
            {stat.name}</li>
-
+        
         ))}
+        <li>
+          <form action="submit">
+          <input type="text" placeholder='New status' name="status" id="status" value={statusNameDD}
+           onKeyDown={handleKeyDown} onChange={handleStatusNameDDChange} required/>
+          <input type="color" name="statusColor" id="statusColor" value={statusColorDD} onChange={handleStatusColorDDChange} />
+          </form>
+        </li>
         </ul>
       )}
     </div>
@@ -265,7 +327,7 @@ export const Tasks = () => {
         <span onClick={() => handleDelete(task.id)}><DeleteButton/></span>
         </p> 
         <span>{task.description}</span> 
-        <span className='status-span'>{task.status.name}</span></li>
+        <span className='status-span'>{statusNameFromDBtoJSX(task.status.name)}</span></li>
           </div>
 
         ))}
