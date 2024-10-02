@@ -1,0 +1,61 @@
+.main-container-profile {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    border: 5px solid lighten(#1a1a1a, 20%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px lighten(#1a1a1a, 40%);
+    padding: 50px 20px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+img {
+    border-radius: 100%;
+    width: 20%;
+    margin-right: 10%;
+}
+div {
+    margin: 10px 0px;
+}
+button {
+    margin-top: 5px;
+    font-size: 120%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s;
+    color: azure;
+    cursor: pointer;
+}
+.btn-username {
+    background-color: rgb(56, 157, 45);
+    &:hover {
+        transition: 0.3s;
+        box-shadow: 0 0 10px lighten(rgb(56, 157, 45), 10%);
+        background-color: lighten(rgb(56, 157, 45), 10%);
+    }
+    margin-right: 10px;
+}
+.btn-pass {
+    background-color: rgb(238, 140, 12);
+    &:hover {
+        transition: 0.3s;
+        box-shadow: 0 0 10px lighten(rgb(238, 140, 12), 10%);
+        background-color: lighten(rgb(238, 140, 12), 10%);
+    }
+}
+.btn-account {
+    width: 100%;
+    background-color: rgb(231, 56, 56);
+    &:hover {
+        transition: 0.3s;
+        box-shadow: 0 0 10px lighten(rgb(231, 56, 56), 10%);
+        background-color: lighten(rgb(231, 56, 56), 10%);
+    }
+}

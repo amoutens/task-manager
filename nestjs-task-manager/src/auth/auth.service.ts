@@ -65,4 +65,7 @@ export class AuthService {
         }
         else throw new UnauthorizedException('Login or password are incorrect')
     }
+    async getUserByUsername(username: string): Promise<User> {
+        return this.usersRepo.findOne({ where: { username } });
+      }
 }

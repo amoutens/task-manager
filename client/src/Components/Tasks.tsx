@@ -315,7 +315,7 @@ export const Tasks = () => {
           }}>
           Done</li>
           {statuses.map((stat) => (
-           <li onClick={() => handleOptionClick(stat.name)}  
+           <li onClick={() => handleOptionClick(stat.name)}
            style={{backgroundColor: stat.color,
              border: `3px solid ${lighten(0.1, stat.color)}`
            }}>
