@@ -236,6 +236,7 @@ nav {
             p{
                 font-size: 30px;
                 span {
+                    margin-left: 10px;
                     opacity: 0;
                     visibility: hidden;
                     transition: opacity 0.2s ease, visibility 0.2s ease;
@@ -267,7 +268,6 @@ nav {
 
 .edit-delete-btn {
     transition: 0.3s;
-    margin-left: 10px;
     &:hover {
         cursor: pointer;
         transition: 0.3s;

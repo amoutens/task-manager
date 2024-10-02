@@ -6,6 +6,7 @@ import { Navbar } from './Components/NavBar';
 import { Registration } from './Components/Registration';
 import { AuthProvider, useAuth } from './Components/AuthProvider';
 import { Home } from './Components/Home';
+import { Profile } from './Components/Profile';
 
 function App() {
   const PrivateRoute = () => {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Authorization />} />
         <Route path="/signup" element={<Registration />} />
         <Route path="/" element={<PrivateRoute/>} />
+        <Route path='/profile' element={<Profile />}/>
       </Routes>
       </Router>
       </main>

@@ -201,7 +201,26 @@ export const Tasks = () => {
     DONE: 'rgb(56, 157, 45, 70%)',
   };
 
-  
+  const handleDeleteStatus = async (statusId: string) => {
+    const token = localStorage.getItem('token');
+
+    try {
+      const response = await fetch(`http://localhost:3000/status/${statusId}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      if (response.ok) {
+        setStatuses(statuses.filter(status => status.id !== statusId)); 
+      } else {
+        throw new Error('Failed to delete task');
+      }
+    } catch (error) {
+      alert('An unexpected error occurred while deleting the task');
+    }
+  }
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
@@ -300,7 +319,7 @@ export const Tasks = () => {
            style={{backgroundColor: stat.color,
              border: `3px solid ${lighten(0.1, stat.color)}`
            }}>
-           {stat.name}</li>
+           {stat.name} <span onClick={() => handleDeleteStatus(stat.id)}><DeleteButton/></span></li>
         
         ))}
         <li>

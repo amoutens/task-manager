@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable, NotFoundException } from "@nestjs/common";
 import { CreateStatusDTO } from "./dto/create-status.dto";
 import { User } from "src/auth/user.entity";
 import { Status } from "./status.entity";
@@ -29,4 +29,10 @@ export class StatusService {
         const statuses = await query.getMany();
         return statuses;
         }
+    async deleteStatusById (id:string, user: User): Promise<void> {
+        const found = await this.statusesRepository.delete({id, user});
+        if (found.affected === 0) {
+            throw new NotFoundException(`Task with ID "${id}" not found`);
+          }
+    }
 }

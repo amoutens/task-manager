@@ -275,6 +275,7 @@ nav ul:hover {
   font-size: 30px;
 }
 .task-page div li p span {
+  margin-left: 10px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
@@ -306,7 +307,6 @@ nav ul:hover {
 .edit-delete-btn {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin-left: 10px;
 }
 .edit-delete-btn:hover {
   cursor: pointer;

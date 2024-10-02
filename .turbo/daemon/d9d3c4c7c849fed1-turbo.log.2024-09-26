@@ -97,3 +97,449 @@
 2024-09-26T13:34:14.155253Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2024-09-26T13:35:26.262450Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
 2024-09-26T13:35:26.262488Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:37:21.549708Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\d9d3c4c7c849fed1-turbo.log.2024-09-26")}
+2024-09-26T13:37:21.549732Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:46:40.254971Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T13:46:40.255006Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:46:47.352945Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\scrollbar.css"), AnchoredSystemPathBuf("client\\src\\assets\\scrollbar.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T13:46:47.352968Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:46:47.455652Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\scrollbar.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.css")}
+2024-09-26T13:46:47.455681Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:48:40.751985Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T13:48:40.752006Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:49:00.762113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T13:49:00.762161Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:49:08.663139Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T13:49:08.663166Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:49:08.864751Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T13:49:08.864784Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:54:27.858933Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T13:54:27.858955Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:55:02.753392Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T13:55:02.753406Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:56:15.848976Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T13:56:15.848994Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T13:59:00.551033Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T13:59:00.551065Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:01:43.764362Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:01:43.764378Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:01:43.952412Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:01:43.952426Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:01:50.956113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:01:50.956151Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:01:51.050530Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:01:51.050560Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:02:12.359373Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:02:12.359404Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:02:12.562250Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:02:12.562285Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:02:42.364857Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:02:42.364880Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:02:42.457740Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:02:42.457784Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:08:49.661534Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:08:49.661576Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:08:49.862571Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.css")}
+2024-09-26T14:08:49.862607Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:08:54.451392Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:08:54.451418Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:08:54.652119Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:08:54.652144Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:09:22.849886Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:09:22.849917Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:09:22.955685Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:09:22.955712Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:09:30.057960Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:09:30.057986Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:09:30.258612Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:09:30.258671Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:08.258482Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:10:08.258518Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:08.458658Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:10:08.458692Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:18.257192Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:10:18.257234Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:18.350045Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:10:18.350068Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:36.151602Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:10:36.151626Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:36.249798Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:10:36.249822Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:10:36.361133Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:10:36.361152Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:15.052148Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:13:15.052170Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:15.254035Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:13:15.254066Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:37.551423Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:13:37.551462Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:37.753243Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:13:37.753265Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:42.351595Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:13:42.351628Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:42.460423Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:13:42.460462Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:52.452871Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:13:52.452893Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:52.656343Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:13:52.656382Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:58.555383Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:13:58.555415Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:13:58.662836Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.css")}
+2024-09-26T14:13:58.662864Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:14:45.561810Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:14:45.561838Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:14:45.855959Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:14:45.855990Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:14:56.859499Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:14:56.859531Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:14:56.952886Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:14:56.952916Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:15:18.456585Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:15:18.456613Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:15:18.563675Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:15:18.563702Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:15:37.151907Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:15:37.151924Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:15:37.355828Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:15:37.355868Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:16:12.250571Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:16:12.250602Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:16:12.360113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:16:12.360145Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:17:28.551667Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:17:28.551692Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:17:28.660338Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:17:28.660366Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:17:40.550381Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:17:40.550439Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:17:40.753128Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:17:40.753164Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:18:16.859398Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:18:16.859417Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:18:16.951369Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:18:16.951399Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:18:50.051695Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:18:50.051715Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:18:50.161640Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:18:50.161678Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:18:57.755996Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:18:57.756021Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:18:57.850964Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:18:57.850994Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:02.059996Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:19:02.060019Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:02.151333Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:19:02.151368Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:08.754602Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:19:08.754626Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:08.869654Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:19:08.869716Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:16.061013Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:19:16.061045Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:16.154718Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:19:16.154753Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:18.248882Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:19:18.248904Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:18.362244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:19:18.362296Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:53.553846Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:19:53.553871Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:53.753875Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:19:53.753900Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:56.257295Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:19:56.257320Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:19:56.459716Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:19:56.459744Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:09.050813Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:20:09.050835Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:19.059083Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:20:19.059123Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:19.262374Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.css")}
+2024-09-26T14:20:19.262392Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:24.254616Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:20:24.254647Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:24.458268Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:20:24.458284Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:32.961295Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:20:32.961334Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:33.053267Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:20:33.053285Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:41.551084Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:20:41.551110Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:20:41.749996Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:20:41.750022Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:21:14.563834Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:21:14.563864Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:21:14.859725Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.css")}
+2024-09-26T14:21:14.859743Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:21:21.162831Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.scss")}
+2024-09-26T14:21:21.162849Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:21:21.256121Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\style.css"), AnchoredSystemPathBuf("client\\src\\assets\\style.min.css")}
+2024-09-26T14:21:21.256173Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:25:40.952597Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T14:25:40.952629Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:26:45.854205Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T14:26:45.854241Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:27:22.551052Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T14:27:22.551086Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:36:44.960741Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T14:36:44.960767Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:37:12.961733Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:37:12.961757Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:37:13.161489Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:37:13.161521Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:37:28.353672Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T14:37:28.353690Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:39:52.955613Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:39:52.955640Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:39:53.159543Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:39:53.159594Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:39:59.063175Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:39:59.063200Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:39:59.149621Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:39:59.149658Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:39:59.264137Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:39:59.264159Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:40:28.061578Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:40:28.061616Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:40:28.153249Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:40:28.153279Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:40:32.451318Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:40:32.451358Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:40:32.559718Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:40:32.559732Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:40:58.358782Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:40:58.358815Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:40:58.451177Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:40:58.451204Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:44:19.054880Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:44:19.054954Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:44:19.256256Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:44:19.256279Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:45:45.648857Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:45:45.648870Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:45:45.757029Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:45:45.757045Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:45:45.850751Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:45:45.850780Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:30.863088Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:46:30.863102Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:30.958126Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:46:30.958165Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:37.160199Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:46:37.160218Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:37.360287Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:46:37.360342Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:45.849755Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:46:45.849789Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:45.957905Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:46:45.957952Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:57.550039Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:46:57.550057Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:57.663753Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:46:57.663771Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:46:57.756238Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:46:57.756252Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:11.858730Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:47:11.858760Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:11.950811Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:47:11.950827Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:21.150674Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:47:21.150692Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:21.260030Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:47:21.260050Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:26.856452Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:47:26.856470Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:26.948928Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:47:26.948952Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:32.559907Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:47:32.559927Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:47:32.652217Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:47:32.652233Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:14.562855Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:51:14.562885Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:14.655372Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:51:14.655388Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:37.250856Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:51:37.250887Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:37.360868Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:51:37.360885Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:51.960593Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:51:51.960618Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:52.053811Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:51:52.053839Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:59.050666Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:51:59.050687Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:51:59.161274Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:51:59.161319Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:03.855640Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:03.855671Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:03.961021Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:52:03.961054Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:07.851506Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:07.851531Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:07.960718Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:52:07.960735Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:12.755754Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:12.755792Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:12.862993Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:52:12.863031Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:12.957427Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:52:12.957439Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:15.850508Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:15.850537Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:15.952981Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:52:15.953008Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:16.053240Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:52:16.053258Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:21.359685Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:21.359715Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:21.452428Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:52:21.452462Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:24.551397Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:24.551429Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:24.660318Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:52:24.660342Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:33.254688Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:33.254706Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:33.363809Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:52:33.363841Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:43.149699Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:52:43.149714Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:52:43.249224Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:52:43.249246Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:01.658897Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:53:01.658957Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:01.750285Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:53:01.750319Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:09.964197Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:53:09.964437Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:10.058156Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:53:10.058194Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:26.754363Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:53:26.754388Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:26.849628Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:53:26.849654Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:31.152675Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:53:31.152689Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:31.361088Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:53:31.361105Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:47.153759Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:53:47.153782Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:47.263366Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:53:47.263401Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:52.149627Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:53:52.149657Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:53:52.256923Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:53:52.256944Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:54:27.257784Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:54:27.257820Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:54:27.460403Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:54:27.460426Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:26.063564Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:55:26.063583Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:26.157072Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:55:26.157101Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:29.258521Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:55:29.258541Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:29.354169Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:55:29.354205Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:29.460733Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:55:29.460756Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:40.353544Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:55:40.353582Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:40.453979Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:55:40.454004Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:55:40.557457Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:55:40.557476Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:16.949363Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:56:16.949384Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:17.060107Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:56:17.060130Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:17.156453Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:56:17.156475Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:30.354781Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:56:30.354803Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:30.449864Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:56:30.449898Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:46.750602Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:56:46.750640Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:56:46.857861Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:56:46.857874Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:12.456720Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:57:12.456737Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:12.549378Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:57:12.549424Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:38.951744Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:57:38.951771Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:39.154370Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:57:39.154412Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:49.158731Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:57:49.158749Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:49.252907Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:57:49.252926Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:55.255968Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:57:55.255993Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:57:55.364514Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:57:55.364544Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:10.553373Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:58:10.553390Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:10.660265Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:58:10.660286Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:10.754122Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:58:10.754136Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:23.754470Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:58:23.754502Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:23.863836Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:58:23.863850Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:26.650401Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:58:26.650429Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:26.758936Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:58:26.758964Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:29.451481Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:58:29.451500Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:29.560565Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:58:29.560584Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:51.555866Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:58:51.555887Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:58:51.650634Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:58:51.650654Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:59:25.858788Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:59:25.858812Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:59:25.951691Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css")}
+2024-09-26T14:59:25.951739Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:59:33.160341Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:59:33.160367Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:59:33.253409Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T14:59:33.253424Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T14:59:33.363054Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T14:59:33.363074Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:00:05.051967Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.scss")}
+2024-09-26T15:00:05.051990Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:00:05.160047Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\assets\\dropdown.css"), AnchoredSystemPathBuf("client\\src\\assets\\dropdown.min.css")}
+2024-09-26T15:00:05.160067Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:23:08.554345Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:23:08.554383Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:23:26.151140Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:23:26.151164Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:25:06.353393Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:25:06.353427Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:25:46.763287Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:25:46.763323Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:26:05.352953Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:26:05.352986Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:28:39.649289Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:28:39.649306Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:28:39.752976Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:28:39.752990Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:30:28.657074Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:30:28.657088Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:31:23.459397Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:31:23.459424Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:33:13.152388Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:33:13.152415Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:33:26.855431Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("client\\src\\Components\\Tasks.tsx")}
+2024-09-26T15:33:26.855459Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-26T15:34:27.361847Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\d9d3c4c7c849fed1-turbo.log.2024-09-26")}
+2024-09-26T15:34:27.361870Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
