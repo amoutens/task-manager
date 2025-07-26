@@ -1,144 +1,99 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Inject, Injectable, NotFoundException } from '@nestjs/common';
 import {TaskStatus} from './task-status.enum'
 import { CreateTaskDTO } from './dto/create-task.dto';
 import { UpdateTaskDTO } from './dto/update-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
-import { error } from 'console';
-// import { TasksRepository } from './tasks.repository';
-import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './task.entity';
-import { Repository, createQueryBuilder } from 'typeorm';
 import { User } from 'src/auth/user.entity';
 import { Status } from 'src/status/status.entity';
+import { bgColorTaskCard } from 'src/utils/constants';
+import { TaskRepository } from './tasks.repository';
+import { StatusRepository } from 'src/status/status.repository';
+import { ITaskRepository } from './tasks.repository.interface';
+import { IStatusRepository } from 'src/status/status.repository.interface';
+import { In } from 'typeorm';
 
 @Injectable()
-
 export class TasksService {
     constructor(
-        @InjectRepository(Task)
-        private tasksRepository: Repository<Task>,
-        // @InjectRepository(TasksRepository)
-        // private tasksRepo: TasksRepository,
-        @InjectRepository(Status)
-        private statRepo : Repository<Status>
-      ) {}
-      async findStatus(name: string): Promise<Status> {
-        const status = await this.statRepo.findOne({where : {name}});
-        if(!status) {
-            throw new NotFoundException('Individual status not found');
-        }
-        return status;
-      }
-
-      async GetTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]> {
-        const { status, search } = filterDto;
-        const query = this.tasksRepository.createQueryBuilder('task');
+      @Inject(TaskRepository) // DIP: depends on abstraction (interface)
+      private readonly tasksRepository: ITaskRepository,
+      @Inject(StatusRepository)
+      private readonly statRepo: IStatusRepository
+    ) {}
       
-        // query.where('task.user = :user', { user });
-        query.where('task.userId = :userId', { userId: user.id });
+    // SRP: Only retrieves tasks with filtering logic.
+    // OCP: Easily extendable for new filters without modifying method.
+    async GetTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]> {
+      return this.tasksRepository.getTasks(user.id, filterDto);
+    }
+    
+    // SRP: Only creates a task.
+    // DIP: Uses repository interface, not direct implementation.
+    async createTask(createTaskDTO: CreateTaskDTO, user: User): Promise<Partial<Task>> {
+        const { title, description, status } = createTaskDTO;
+        let statusDetails: { name: string | TaskStatus; color: string }
+        const statusByType = await this.getStatusByType(status);
+        const name = typeof statusByType === 'string' ? statusByType : statusByType.name;
+        const color = typeof statusByType === 'string'
+            ? bgColorTaskCard[statusByType]
+            : statusByType.color;
+        statusDetails = { name, color };
         
-        if (status) {
-          if (Object.values(TaskStatus).includes(status as TaskStatus)) {
-            query.andWhere('task.status ->> \'name\' = :status', { status });
-          } else {
-            query.andWhere('task.status.name = :status', { status });
-          }
+        const taskData = {
+          title,
+          description,
+          status: statusDetails, 
+          user
         }
-      
-        if (search) {
-          query.andWhere(
-            '(LOWER(task.title) LIKE LOWER(:search) OR LOWER(task.description) LIKE LOWER(:search))',
-            { search: `%${search}%` }
-          );
-        }
-      
-        const tasks = await query.getMany();
-        return tasks;
-      }
-      
-      
-        async createTask(createTaskDTO: CreateTaskDTO, user: User): Promise<Task> {
-            const { title, description, status } = createTaskDTO;
-          
-            let statusDetails: { name: string | TaskStatus; color: string } | null = null;
-            const bgColorTaskCard = {
-              OPEN: 'rgb(231, 56, 56, 70%)',
-              IN_PROGRESS: 'rgb(115, 13, 115, 70%)',
-              DONE: 'rgb(56, 157, 45, 70%)',
-            };
-            if (Object.values(TaskStatus).includes(status as TaskStatus)) {
-              const taskStatus = status as TaskStatus;
-              statusDetails = {
-                name: taskStatus,
-                color: bgColorTaskCard[taskStatus],
-              };
-            } else {
-              const foundStatus = await this.findStatus(status as string);
-              statusDetails = {
-                name: foundStatus.name,
-                color: foundStatus.color,
-              };
-            }
-          
-            const task = this.tasksRepository.create({
-              title,
-              description,
-              status: statusDetails, 
-              user,
-            });
-          
-            await this.tasksRepository.save(task);
-            return task;
-          }
-          
-          
-    async getTaskById(id: string, user: User): Promise<Task> {
-        const found = await this.tasksRepository.findOne({where: {id, user: {id: user.id}}});
-        if(!found) throw new NotFoundException(`Task with ID "${id}" not found`);
-        return found
+        await this.tasksRepository.createTask(taskData)
+        return {
+          title: taskData.title,
+          description: taskData.description,
+          status: taskData.status
+        };
     }
-    async deleteTaskById (id:string, user: User): Promise<void> {
-        const found = await this.tasksRepository.delete({id, user});
-        if (found.affected === 0) {
-            throw new NotFoundException(`Task with ID "${id}" not found`);
-          }
+    
+    // SRP: Only gets a task by id.
+    // DIP: Uses repository interface.
+    async getTaskById(id: string, user: User): Promise<Task> {
+      return await this.tasksRepository.findTaskById(id, user);
     }
 
+    // SRP: Only deletes a task.
+    // DIP: Uses repository interface.
+    async deleteTaskById (id:string, user: User): Promise<void> {
+      await this.tasksRepository.deleteTaskById(id, user);
+    }
+
+    // SRP: Only updates a task.
+    // DIP: Uses repository interface.
     async updateTask(id: string, updateTaskDTO: UpdateTaskDTO, user: User): Promise<Task> {
-      const bgColorTaskCard = {
-        OPEN: 'rgb(231, 56, 56, 70%)',
-        IN_PROGRESS: 'rgb(115, 13, 115, 70%)',
-        DONE: 'rgb(56, 157, 45, 70%)',
-      };
       const task = await this.getTaskById(id, user);
       const { title, description, status } = updateTaskDTO;
-  
       if (title !== undefined) {
         task.title = title;
       }
-  
       if (description !== undefined) {
         task.description = description;
       }
-  
       if (status !== undefined) {
-        if (Object.values(TaskStatus).includes(status as TaskStatus)) {
-          task.status = {
-            name: status,
-            color: bgColorTaskCard[status],
-          };
-        } else {
-          const foundStatus = await this.findStatus(status as string);
-          task.status = {
-            name: foundStatus.name,
-            color: foundStatus.color,
-          };
+        const statusByType = await this.getStatusByType(status);
+        const name = typeof statusByType === 'string' ? statusByType : statusByType.name;
+        const color = typeof statusByType === 'string'
+            ? bgColorTaskCard[statusByType]
+            : statusByType.color;
+        task.status = { name, color };
         }
-      }
-  
-      await this.tasksRepository.save(task);
+      await this.tasksRepository.saveTask(task);
       return task;
+    }
+    
+  private async getStatusByType(status: TaskStatus | string): Promise<string | Status> {
+    if (Object.values(TaskStatus).includes(status as TaskStatus)) {
+      return status as string;
+    }
+    const foundStatus = await this.statRepo.findStatus(status as string);
+    return foundStatus;
   }
-  
-      
 }

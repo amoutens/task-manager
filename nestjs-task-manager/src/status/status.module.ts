@@ -4,6 +4,7 @@ import { StatusController } from './status.controller';
 import { StatusService } from './status.service';
 import { Status } from './status.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { StatusRepository } from './status.repository';
 
 @Module({
   imports: [
@@ -11,6 +12,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
      AuthModule
   ],
   controllers: [StatusController],
-  providers: [StatusService]
+  providers: [StatusService, StatusRepository],
 })
 export class StatusModule {}

@@ -1,4 +1,4 @@
-import { BadRequestException, ConflictException, Injectable, InternalServerErrorException, UnauthorizedException } from '@nestjs/common';
+import { BadRequestException, ConflictException, Inject, Injectable, InternalServerErrorException, UnauthorizedException } from '@nestjs/common';
 import { User } from './user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
@@ -7,12 +7,16 @@ import * as bcrypt from 'bcrypt'
 import { JwtService } from '@nestjs/jwt';
 import { JwtPayload } from './jwt-payload.interface';
 import { validateOrReject } from 'class-validator';
+import { Task } from 'src/tasks/task.entity';
+import { Status } from 'src/status/status.entity';
+import { AuthRepository } from './users.repository';
+import { IAuthRepository } from './auth.repository.interface';
 
 @Injectable()
 export class AuthService {
     constructor (
-        @InjectRepository(User)
-        private usersRepo: Repository<User>, 
+        @Inject(AuthRepository)
+        private readonly usersRepo: IAuthRepository, 
         private jwtService: JwtService
     ){}
 
@@ -33,30 +37,15 @@ export class AuthService {
 
         const salt = await bcrypt.genSalt();
         const hashedPass = await bcrypt.hash(password, salt);
-        const user = this.usersRepo.create({
+        const userData = {
             username,
             password: hashedPass,
-        });
-
-        try {
-            await this.usersRepo.save(user);
-        } catch (error) {
-            if (error.code === '23505') {
-                throw new ConflictException({
-                    statusCode: 409,
-                    message: [`The username ${username} is already taken.`],
-                });
-            } else {
-                throw new InternalServerErrorException({
-                    statusCode: 500,
-                    message: 'Internal server error',
-                });
-            }
         }
+        await this.usersRepo.createUser(userData);
     }
     async signIn(authCredentialsDto: AuthCredentialsDto): Promise<{accessToken: string}> {
         const {username, password} = authCredentialsDto;
-        const user = await this.usersRepo.findOne({where: {username}});
+        const user = await this.usersRepo.findUserByUsername(username);
 
         if(user && (await bcrypt.compare(password, user.password))) {
             const payload: JwtPayload = {username};
@@ -66,6 +55,64 @@ export class AuthService {
         else throw new UnauthorizedException('Login or password are incorrect')
     }
     async getUserByUsername(username: string): Promise<User> {
-        return this.usersRepo.findOne({ where: { username } });
-      }
+        return this.usersRepo.findUserByUsername(username);
+    }
+    
+    async changePassword(username: string, oldPassword: string, newPassword: string): Promise<void> {
+    const user = await this.getUserByUsername(username);
+
+    if (!user) {
+        throw new UnauthorizedException('User not found');
+    }
+
+    const passwordMatches = await bcrypt.compare(oldPassword, user.password);
+    if (!passwordMatches) {
+        throw new UnauthorizedException('Old password is incorrect');
+    }
+
+    const salt = await bcrypt.genSalt();
+    const hashedPass = await bcrypt.hash(newPassword, salt);
+    user.password = hashedPass;
+
+    try {
+        await this.usersRepo.updateUser(user);
+    } catch (error) {
+        throw new InternalServerErrorException('Could not update the password');
+    }
+}
+
+    async changeUsername(currentUsername: string, newUsername: string): Promise<void> {
+        const user = await this.getUserByUsername(currentUsername);
+
+        if (!user) {
+            throw new UnauthorizedException('User not found');
+        }
+
+        const existingUser = await this.usersRepo.findUserByUsername(newUsername);
+        if (existingUser) {
+            throw new ConflictException('Username is already taken');
+        }
+
+        user.username = newUsername;
+
+        try {
+            await this.usersRepo.updateUser(user);
+        } catch (error) {
+            throw new InternalServerErrorException('Could not update the username');
+        }
+    }
+
+    async deleteAccount(username: string): Promise<void> {
+        const user = await this.getUserByUsername(username);
+
+        if (!user) {
+            throw new UnauthorizedException('User not found');
+        }
+
+        try {
+            await this.usersRepo.deleteUser( user );
+        } catch (error) {
+            throw new InternalServerErrorException('Could not delete account and related tasks');
+        }
+    }
 }

@@ -1,38 +1,42 @@
-import { Injectable, NotFoundException } from "@nestjs/common";
+import { Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { CreateStatusDTO } from "./dto/create-status.dto";
 import { User } from "src/auth/user.entity";
 import { Status } from "./status.entity";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
+import { StatusRepository } from "./status.repository";
+import { privateDecrypt } from "crypto";
+import { IStatusRepository } from "./status.repository.interface";
 
 @Injectable()
 export class StatusService {
     constructor(
-        @InjectRepository(Status)
-        private statusesRepository: Repository<Status>,
-      ) {}
+        @Inject(StatusRepository)
+        private readonly statusesRepository: IStatusRepository
+    ) {}
     async createStatus (createStatusDTO: CreateStatusDTO, user: User): Promise<Status> {
         const {name, color} = createStatusDTO;
 
-        const status = this.statusesRepository.create( {
+        const statusData = {
             name,
             color,
             user
-        })
-        await this.statusesRepository.save(status);
+        };
+
+        const status = this.statusesRepository.createStatus( statusData );
+        if (!status) {
+            throw new NotFoundException('Status could not be created');
+        }
         return status;
     }
     async GetStatuses(user: User) : Promise<Status[]> {
-        
-        const query = this.statusesRepository.createQueryBuilder('status');
-        query.where({user});
-        const statuses = await query.getMany();
-        return statuses;
+        const statuses = await this.statusesRepository.getStatuses(user);
+        if (!statuses || statuses.length === 0) {
+            throw new NotFoundException('No statuses found for this user');
         }
+        return statuses;
+    }
     async deleteStatusById (id:string, user: User): Promise<void> {
-        const found = await this.statusesRepository.delete({id, user});
-        if (found.affected === 0) {
-            throw new NotFoundException(`Task with ID "${id}" not found`);
-          }
+        await this.statusesRepository.deleteStatusById(id, user);
     }
 }

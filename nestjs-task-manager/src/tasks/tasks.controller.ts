@@ -30,7 +30,7 @@ export class TasksController {
     createTask(
         @Body() createTaskDTO: CreateTaskDTO,
         @GetUser() user: User,
-    ): Promise<Task> {
+    ): Promise<Partial<Task>> {
         return this.tasksService.createTask(createTaskDTO, user);
     }
 
